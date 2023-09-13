@@ -1,0 +1,40 @@
+@media screen and (max-width: 992px){
+	.hero-content h1{
+		font-size: px;
+	}
+}
+@media screen and (max-width: 768px){
+	.about-text{
+		margin: 0;
+	}
+	.about-btn{
+		margin: 5px 0 0 0;
+	}
+
+	.text-scroll{
+		height: 70px;	
+	}
+}
+@media screen and (max-width: 576px){
+}
+@media screen and (max-width: 320px){
+	.hero-content h1{
+		font-size: 42px;
+	}
+	.text-scroll{
+		height: 100px;	
+	}
+	.cta-content{
+		display: block;
+		text-align: center;
+	}
+	.cta-content a{
+		margin-top: 10px;
+	}
+	.line{
+		display: none;
+	}
+	.left{
+		margin-right: 50px;
+	}
+}

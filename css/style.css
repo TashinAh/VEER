@@ -1,0 +1,319 @@
+*{
+	margin: 0; padding: 0; box-sizing: border-box;
+	/*font-family: 'Open Sans', sans-serif;*/	
+	font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0; padding: 0;
+}
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a{
+	margin: 0; padding: 0;
+	text-decoration: none;
+}
+p{
+	margin: 0; padding: 0;
+}
+/*--------------------- common part ---------------------*/
+
+/*--------------------- navbar part start ---------------------*/
+.navbar{
+	font-family: 'Poppins', sans-serif;
+	background: #fff;
+	padding: 4px 0;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	box-shadow: 1px 1px 12px -2px rgba(0, 0, 0, 0.4);
+}
+.logo-area{
+	width: 65px;
+}
+.nav-item{
+	margin-left: 13px;
+}
+.nav-link{
+	color: #0E1424;
+	transition: .4s;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color: #31D7CE;
+}
+.nav-link:hover{
+	color: #31D7CE;
+}
+/*--------------------- navbar part end ---------------------*/
+
+/*--------------------- hero part start ---------------------*/
+.hero-part{
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero-img.jpg) no-repeat center;
+	background-size: cover;
+	height: 89vh;
+	position: relative;
+}
+.hero-content{
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	position: absolute;
+	text-transform: uppercase;
+}
+.hero-content h1{
+	font-weight: 700;
+	font-size: 54px;
+	letter-spacing: 5px;
+}
+.hero-btn{
+	padding: 8px 22px;
+	font-size: 14px;
+	display: inline-block;
+	margin: 26px 0 0 0;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	font-weight: 500;
+	color: #31D7CE;
+	transition: .5s;
+}
+.hero-btn:hover{
+	background: #0DAC88;
+	border: 2px solid #0DAC88;
+	color: #fff;
+	font-weight: 600;
+}
+/*--------------------- hero part end ---------------------*/
+
+/*--------------------- about part start ---------------------*/
+.about-part{
+	background: #FFFFFF;
+	padding: 100px 0 60px 0;
+}
+.about-text{
+	margin: 20px 0;
+}
+.about-text h3{
+	font-family: 'Poppins', sans-serif;
+	font-size: 33px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+.text-scroll{
+	width: 100%;
+	height: 100px;
+	overflow: scroll;
+	margin: 10px 0 0 0;
+}
+.text-scroll p{
+	color: #2F2F2F;
+	font-family: 'Open Sans', sans-serif;
+}
+.about-btn{
+	font-size: 13px;
+	padding: 6px 20px;
+	color: #0DAC88;
+	border: 1px solid ;
+	border-radius: 20px;
+	margin: 30px 0;
+	display: inline-block;
+	transition: .5s;
+}
+.about-btn:hover{
+	background: #0DAC88;
+	color: #fff;
+}
+/*--------------------- about part end ---------------------*/
+
+/*--------------------- service part end ---------------------*/
+.service-part{
+	font-family: 'Open Sans', sans-serif;
+	padding: 50px 0 50px 0;
+}
+.heading h2{
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 40px;
+	text-transform: capitalize;
+}
+.service-icon{
+	width: 87px;
+	height: 64px;
+	margin-right: 20px;
+}
+.service-box{
+	background: #FFF;
+	padding: 40px 35px;
+	transition: .8s;
+	overflow: hidden;
+}
+.service-box:hover{
+	box-shadow: 1px 1px 12px -2px #24DDB3;
+	padding: 37px 30px;
+}
+.box-text h5{
+	font-weight: 600;
+	font-size: 18px;
+	color: #444444;
+	margin-top: 4px;
+}
+.box-text p{
+	font-weight: 400;
+	font-size: 14px;
+	color: #555;
+	margin-top: 10px;
+}
+/*--------------------- service part end ---------------------*/
+
+/*--------------------- protfolio part start ---------------------*/
+.protfolio-part{
+	padding: 50px 0 50px 0;
+}
+.images{
+	position: relative;
+}
+.img-overlay{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	transition: 1s;
+}
+.img-overlay p{
+	text-align: center;
+	color: #fff;
+	bottom: 0;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: 1s;
+}
+.images:hover .img-overlay{
+	background: rgba(0, 0, 0, 0.5);
+}
+.images:hover .img-overlay p{
+	opacity: 1;
+	bottom: 40%;
+}
+/*--------------------- protfolio part end ---------------------*/
+
+/*--------------------- countent part start ---------------------*/
+.count-part{
+	background: url(../img/counter.jpg) no-repeat center;
+	background-size: cover;
+	color: #fff;
+}
+.counter-overlay{
+	width: 100%;
+	height: 157px;
+	background: rgba(0, 0, 0, 0.2);
+}
+.count{
+	padding-top: 32px;
+}
+.fa-solid{
+	font-size: 30px;
+}
+.count h2{
+	font-weight: bold;
+}
+/*--------------------- countent part end ---------------------*/
+
+/*--------------------- blog part start ---------------------*/
+.blog-part{
+	font-family: 'Poppins', sans-serif;
+	margin: 60px 0;
+}
+.blog-text h4{
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 25px 0 15px 0;
+	color: #333333;
+}
+.blog-text p{
+	font-weight: 400;
+	font-size: 18.2px;
+	color: #666666;
+	font-family: 'Open Sans', sans-serif;
+}
+.blog-text h6{
+	font-size: 13px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #555555;
+	padding-top: 26px;
+}
+/*--------------------- blog part end ---------------------*/
+
+/*--------------------- CTA part start ---------------------*/
+.cta-part{
+	font-family: 'Open Sans', sans-serif;
+	background: #50D18D;
+}
+.cta-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0;
+}
+.cta-content h2{
+	color: #fff;
+	font-weight: 600;
+	font-size: 25px;
+}
+.cta-content a{
+	display: inline-block;
+	padding: 15px 28px;
+	border-radius: 40px;
+	color: #fff;
+	background: #4BE694;
+	margin-left: 8px;
+	font-weight: 700;
+	font-size: 13px;
+}
+/*--------------------- CTA part end ---------------------*/
+
+/*--------------------- footer part start ---------------------*/
+.contact-part{
+	background: #000415;
+	color: #fff;
+	padding: 60px 0 0 0;
+}
+.left-text p{
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+.left{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding: 55px 0 0 0;
+}
+.line{
+	width: 1px;
+	height: 100%;
+	background: #393838;
+	margin: 0 80px;
+}
+.home:nth-child(1){
+	margin-bottom: 25px;
+}
+.home i{
+	margin-right: 20px;
+}
+.right{
+	padding: 30px 0;
+}
+/*--------------------- footer part end ---------------------*/
+footer{
+	background: #000415;
+	color: #fff;
+	padding: 10px 0;
+}
